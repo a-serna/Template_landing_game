@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'Ciutadella-regular';
+  src: url('../src/Fonts/Ciutadella-Regular.otf') format('opentype'),
+      url('../src/Fonts/Ciutadella-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ciutadella-Medium';
+  src: url('../src/Fonts/Ciutadella-Medium.otf') format('opentype'),
+        url('../src/Fonts/Ciutadella-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ciutadella-Semibold';
+  src: url('../src/Fonts/Ciutadella-SemiBold.otf') format('opentype'),
+        url('../src/Fonts/Ciutadella-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ciutadella-Bold';
+  src: url('../src/Fonts/Ciutadella-Bold.otf') format('opentype'),
+        url('../src/Fonts/Ciutadella-Bold.ttf') format('truetype');
+  font-weight: bolder;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Ciutadella-regular';
+  background-color: #0C0B0B;
+  color: #fff;
+  font-size: 18px;
+}
+
+b {
+  font-family: 'Ciutadella-Bold';
+}
+
+.medium{
+  font-family: 'Ciutadella-Medium';
+} 
+
+.btn-custom {
+  background-color: transparent;
+  color: #EAC365;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  min-width: 120px;
+  max-width: 280px;
+  border: 2px solid #EAC365;
+  font-weight: bold;
+}
+
+.btn-custom:hover {
+  background-color: #EAC365;
+  color: #0C0B0B;
+}
+
+.hero {
+  background: url('../src/Banner-principal.png') no-repeat top center/cover;
+  background-color: #0C0B0B;
+}
+
+.intentos{
+  background: url('../src/campo-futbol.jpg') no-repeat top center/cover;
+  background-color: #0C0B0B;
+  padding-block: 2rem;
+}
+
+.brand-container {
+  background-color: #0C0B0B;
+}
+
+.brand {
+  max-width: 200px;
+  min-width: 180px;
+  padding: 16px;
+}
+
+.icon-size {
+  min-width: 64px;
+  max-width: 160px;
+}
+
+.icon-minsize {
+  width: 24px;
+}
+
+.title-target {
+  max-width: 450px;
+  margin-inline: auto;
+  width: 100%;
+  display: block;
+}
+
+.color-text-yellow{
+  color: #EAC365;
+}
+
+.text-legal{
+  color: #EAC365;
+  text-align: center;
+  margin-top: 16px;
+  display: block;
+}
+
+.icon-xl {
+  width: 150px;
+  height: 64px;
+}
+
+.container-campain {
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  text-align: center;
+  gap: 0.2rem;
+  margin-top: 1rem;
+}
+
+.item-campain {
+  width: calc(100vw/3);
+  margin-inline: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 1em;
+  transition: ease;
+  transition-duration: 1000ms;
+  display: flex;
+  border: 1px solid #EAC365;
+}
+
+.item-campain:hover {
+  background-color: rgba(234, 195, 101, 0.6);
+  border: 1px solid #EAC365;
+  border-radius: 1em;
+  transition: ease;
+  transition-duration: 1000ms;
+}
+
+.card-container {
+  background: #0C0B0B;
+  background: linear-gradient(90deg, rgba(12, 11, 11, 0.8) 50%, rgba(231, 67, 50, 0.6) 100%);
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  gap: 1rem;
+}
+
+.card-container div {
+  padding-inline: 3rem;
+  padding-block: 1rem;
+}
+
+.card-container div img {
+  width: 124px;
+}
+
+.border-r {
+  border-right: 2px solid white;
+  border-radius: 0;
+}
+
+.border-l {
+  border-left: 2px solid white;
+  border-radius: 0;
+}
+
+footer {
+  font-size: 1rem;
+  background-color: #0C0B0B;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .hero {
+    background: url('../src/Banner-principal-mobile.jpg') no-repeat right center/cover;
+    padding: 5px 1rem;
+  }
+
+  .intentos {
+  background: url('../src/campo-futbol-mobile.jpg') no-repeat top center/cover;
+  padding-block: 1rem;
+}
+
+  .container-campain {
+    overflow-x: scroll;
+    width: 90vw;
+    margin-inline: auto;
+  }
+
+  
+  .item-campain {
+    min-width: 250px;
+    margin-block: 1rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .border-r,
+  .border-l {
+    border-right: none;
+    border-left: none;
+  }
+
+  .promo {
+    background: url('../src/premios-bg-mobile.png') no-repeat center center/cover;
+    padding: 1rem;
+  }
+
+  .h-empty {
+    height: 15vh;
+  }
+}

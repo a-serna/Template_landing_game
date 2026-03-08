@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chevignon Game</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/form.css">
+  <link rel="shortcut icon" href="../src/Favicon.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="brand-container d-flex justify-content-between align-items-center p-3">
+    <div class="container d-flex">
+      <img class="brand mx-auto" src="../src/CH-brand.svg" alt="Chevignon Racing">
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="register">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <h2 class="mb-4 text-uppercase text-center">Regístrate,<br>apunta y gana.</h2>
+          <form action="/enviar" method="post" novalidate>
+            <!-- Número de identificación -->
+            <div class="field">
+              <label for="identificacion" class="d-none">Número de identificación <span aria-hidden="true">*</span></label>
+              <input id="identificacion" name="identificacion" type="text" inputmode="numeric" pattern="[0-9]{5,}"
+                autocomplete="off" placeholder="Número de identificación" required />
+            </div>
+
+            <!-- Nombre -->
+            <div class="field">
+              <label for="nombre" class="d-none">Nombre completo <span aria-hidden="true">*</span></label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Nombre completo" required />
+            </div>
+
+            <!-- Correo -->
+            <div class="field">
+              <label for="email" class="d-none">Correo electrónico <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="Correo electrónico"
+                required />
+            </div>
+
+            <div class="field">
+              <label for="tel" class="d-none">Número telefónico <span aria-hidden="true">*</span></label>
+              <input id="tel" name="tel" type="tel" autocomplete="tel" placeholder="Número telefónico"
+                required />
+            </div>
+
+            <!-- Número de factura -->
+            <div class="field">
+              <label for="factura" class="d-none">Número de factura <span aria-hidden="true">*</span></label>
+              <input id="factura" name="factura" type="text" autocomplete="off" placeholder="*Número de orden de compra"
+                pattern="[A-Za-z0-9\-]{4,}" required />
+            </div>
+            <small>*Consulta el correo de confirmación de tu compra</small>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+              <label class="form-check-label" for="flexCheckDefault">
+                <a class="text-muted" href="./termsConditions.html" target="_blank">
+                  <p class="text-center my-2 ms-2 text-light">Acepto los términos y condiciones</p>
+                </a>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-custom mb-5 mx-auto d-block">Jugar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="mb-0">Todos los derechos reservados Chevignon © 2026</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+.winner {
+    background: url('../src/registro-bg.png') no-repeat center center/cover;
+    padding: 9rem 1rem;
+}
+
+.winner h2 {
+  color: #E74332;
+  font-weight: 600;
+  font-size: 2.6rem;
+  font-family: 'Akzidenz-Grotesk-Bold', sans-serif;
+  text-shadow: -3px 0px 2px rgba(188, 57, 43, 0.9), 
+              -6px 0px 3px rgba(145, 47, 37, 0.8), 
+              -9px 0px 4px rgba(103, 37, 30, 0.7), 
+              -12px 0px 5px rgba(60, 27, 24, 0.6), 
+              -15px 0px 6px rgba(17, 17, 17, 0.5),
+              15px 0px 6px rgba(188, 57, 43, 0.1),
+              12px 0px 5px rgba(188, 57, 43, 0.2),
+              9px 0px 4px rgba(188, 57, 43, 0.5),
+              6px 0px 3px rgba(188, 57, 43, 0.7),
+              3px 0px 2px rgba(188, 57, 43, 0.9);
+}
+
+.prize{
+    max-width: 500px;
+    min-width: 180px;
+    display: flex;
+    gap: 0.5rem;
+    background-color: rgba(114, 30, 25, 0.6);
+    transition: ease;
+    transition-duration: 1000ms;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.prize:hover {
+  background-color: rgba(114, 30, 25, 0.8);
+  border: 1px solid #fff;
+  border-radius: 1em;
+  transition: ease;
+  transition-duration: 1000ms;
+}
+
+.time img, .score img{
+    width: 24px;
+}
+
+.time p, .score p{
+    font-size: 2rem;
+    font-family: 'Akzidenz-Grotesk-Bold', sans-serif;
+    font-weight: 600;
+}
+
+.user-point{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+@media (max-width: 767.98px) {
+    .prize{
+    flex-direction: column;
+    padding: 1.2rem;
+    text-align: center;
+}
+    .winner h2 {
+  font-size: 2.2rem;
+}
+    .winner {
+    background: url('../src/registro-bg-mobile.png') no-repeat center center/cover;
+    padding: 80px 20px;
+    }
+    .user-point{
+    flex-direction: column;
+    }
+    .winner .h-empty {
+    height: 20vh;
+    }
+}

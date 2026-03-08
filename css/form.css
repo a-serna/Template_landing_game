@@ -1,0 +1,65 @@
+.register {
+    background: url('../src/registro-bg.jpg') no-repeat center center/cover;
+    padding: 2.5rem 1rem;
+    min-height: 100vh;
+}
+
+.register h2{
+    color: #EAC365;
+    font-size: 3rem;
+    font-family: 'Ciutadella-Bold';
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+form .field:nth-child(5){
+    flex-grow: 0.85;
+}
+
+form .form-check{
+    width: 100%;
+    margin-left: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: .75rem .9rem;
+    border: 1px solid #E2E1E1;
+    border-radius: 0.5rem;
+    background: transparent;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6b8afd;
+    box-shadow: 0 0 0 3px rgba(107, 138, 253, .2);
+}
+
+input:required:invalid {
+    border-color: #EAC365;
+}
+
+button {
+    appearance: none;
+    border: 0;
+}
+
+@media (max-width: 767.98px) {
+    .register {
+    background: url('../src/registro-bg_mobile.jpg') no-repeat bottom center/cover;
+    padding: 80px 20px;
+    }
+    form .field:first-child, form .field:nth-child(2), form .field:nth-child(3), form .field:nth-child(4){
+    flex-grow: 0;
+    width: 100%
+    }
+}
